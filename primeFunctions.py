@@ -1,4 +1,4 @@
-#!/env/bin/usr/python3
+#!/usr/bin/env python3
 import math
 
 def isItPrime(n):
