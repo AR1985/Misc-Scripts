@@ -6,7 +6,13 @@ def isItPrime(n):
 
     iRoot_N = int(math.sqrt(n)) #Calculates the root of the number as an integer
 
-    for i in range(2, iRoot_N):
+    if ((n == 0) or (n == 1)):
+        return False
+
+    if (n == 2):
+        return True
+
+    for i in range(3, iRoot_N, 2):
         
         if (n%i == 0):
             return(False)   #If remainder is 0, number is not a prime
